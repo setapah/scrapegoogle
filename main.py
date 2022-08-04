@@ -77,7 +77,5 @@ def google_search(query):
 
 
 from ecommercetools import seo
-results = seo.get_serps("scrape google results")
-file = open('search_results.txt' , 'w')
-file.write(results)
-file.close()
+results = seo.get_serps("curitiba + greca")
+results.to_csv('search_results.csv')
