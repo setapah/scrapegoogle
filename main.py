@@ -75,10 +75,9 @@ def google_search(query):
     response = get_results(query)
     return str(parse_results(response))
 
-results = google_search("teste")
-print(results)
 
+from ecommercetools import seo
+results = seo.get_serps("scrape google results")
 file = open('search_results.txt' , 'w')
 file.write(results)
 file.close()
-
